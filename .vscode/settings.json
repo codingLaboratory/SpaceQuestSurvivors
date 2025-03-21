@@ -56,5 +56,5 @@
         "temp/": true,
         "Temp/": true
     },
-    "dotnet.defaultSolution": "SpaceQuest.sln"
+    "dotnet.defaultSolution": "SpaceQuestSurvivors.sln"
 }
