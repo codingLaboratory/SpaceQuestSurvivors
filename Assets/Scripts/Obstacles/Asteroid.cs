@@ -53,6 +53,7 @@ public class Asteroid : MonoBehaviour
             GameObject destroyEffect = destroyEffectPool.GetPooledObject();
             destroyEffect.transform.position = transform.position;
             destroyEffect.transform.rotation = transform.rotation;
+            destroyEffect.transform.localScale = transform.localScale;
             destroyEffect.SetActive(true);
 
             AudioManager.Instance.PlayModifiedSound(AudioManager.Instance.boom2);
