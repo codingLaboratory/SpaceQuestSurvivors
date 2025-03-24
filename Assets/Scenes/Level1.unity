@@ -426,6 +426,52 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 86358216}
   m_CullTransparentMesh: 1
+--- !u!1 &130518633
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 130518634}
+  - component: {fileID: 130518635}
+  m_Layer: 0
+  m_Name: Boom2Pool
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &130518634
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 130518633}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1430303185}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &130518635
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 130518633}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c7fc8e10a0515334fb7f42a4b0091a7b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  prefab: {fileID: 539765987045839069, guid: cc5f04b98ee17394f92e4f651d530666, type: 3}
+  poolSize: 5
 --- !u!1 &139666720
 GameObject:
   m_ObjectHideFlags: 0
@@ -588,34 +634,14 @@ MonoBehaviour:
   maxPos: {fileID: 1695597536}
   waveNumber: 0
   waves:
-  - prefab: {fileID: 642622788787619178, guid: 92c1f73e2b7217e4ab8dcc3a703d7d66, type: 3}
-    spawnTimer: 0
-    spawnInterval: 1
-    objectsPerWave: 20
-    spawnedObjectCount: 0
-  - prefab: {fileID: 642622788787619178, guid: 92c1f73e2b7217e4ab8dcc3a703d7d66, type: 3}
-    spawnTimer: 0
-    spawnInterval: 0.6
-    objectsPerWave: 40
-    spawnedObjectCount: 0
-  - prefab: {fileID: 642622788787619178, guid: 92c1f73e2b7217e4ab8dcc3a703d7d66, type: 3}
-    spawnTimer: 0
-    spawnInterval: 0.4
-    objectsPerWave: 100
-    spawnedObjectCount: 0
-  - prefab: {fileID: 642622788787619178, guid: 92c1f73e2b7217e4ab8dcc3a703d7d66, type: 3}
-    spawnTimer: 0
-    spawnInterval: 2
-    objectsPerWave: 10
-    spawnedObjectCount: 0
-  - prefab: {fileID: 3471200391665924210, guid: 1d69f2cd47222ff49882544508a79e4a, type: 3}
+  - pool: {fileID: 570859167}
     spawnTimer: 0
     spawnInterval: 5
-    objectsPerWave: 1
+    objectsPerWave: 3
     spawnedObjectCount: 0
-  - prefab: {fileID: 642622788787619178, guid: 92c1f73e2b7217e4ab8dcc3a703d7d66, type: 3}
+  - pool: {fileID: 570859167}
     spawnTimer: 0
-    spawnInterval: 5
+    spawnInterval: 3
     objectsPerWave: 1
     spawnedObjectCount: 0
 --- !u!4 &196944668
@@ -1435,6 +1461,52 @@ Transform:
   m_Children: []
   m_Father: {fileID: 782940388}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &570859165
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 570859166}
+  - component: {fileID: 570859167}
+  m_Layer: 0
+  m_Name: AsteroidPool
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &570859166
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 570859165}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1430303185}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &570859167
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 570859165}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c7fc8e10a0515334fb7f42a4b0091a7b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  prefab: {fileID: 642622788787619178, guid: 92c1f73e2b7217e4ab8dcc3a703d7d66, type: 3}
+  poolSize: 5
 --- !u!1 &619394800
 GameObject:
   m_ObjectHideFlags: 0
@@ -8583,7 +8655,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &1418158861
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8600,17 +8672,17 @@ MonoBehaviour:
   maxPos: {fileID: 785661219}
   waveNumber: 0
   waves:
-  - prefab: {fileID: 7001725775965650086, guid: 26efd7a4e68a891439cd3f38a7d9b519, type: 3}
+  - pool: {fileID: 0}
     spawnTimer: 0
     spawnInterval: 1
     objectsPerWave: 3
     spawnedObjectCount: 0
-  - prefab: {fileID: 7001725775965650086, guid: 26efd7a4e68a891439cd3f38a7d9b519, type: 3}
+  - pool: {fileID: 0}
     spawnTimer: 0
     spawnInterval: 1.2
     objectsPerWave: 20
     spawnedObjectCount: 0
-  - prefab: {fileID: 7001725775965650086, guid: 26efd7a4e68a891439cd3f38a7d9b519, type: 3}
+  - pool: {fileID: 0}
     spawnTimer: 0
     spawnInterval: 5
     objectsPerWave: 3
@@ -8657,11 +8729,13 @@ Transform:
   m_GameObject: {fileID: 1430303184}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.5603936, y: 2.1006458, z: -2.4598062}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1371389638}
+  - {fileID: 570859166}
+  - {fileID: 130518634}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1431016351
