@@ -38,7 +38,7 @@ public class ObjectSpawner : MonoBehaviour
     private void SpawnObject(){
         GameObject spawnedObject = waves[waveNumber].pool.GetPooledObject();
         spawnedObject.transform.position = RandomSpawnPoint();
-        spawnedObject.transform.rotation = transform.rotation;
+        //spawnedObject.transform.rotation = transform.rotation;
         spawnedObject.SetActive(true);
         waves[waveNumber].spawnedObjectCount++;
     }
