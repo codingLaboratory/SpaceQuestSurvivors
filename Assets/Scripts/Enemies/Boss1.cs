@@ -15,6 +15,7 @@ public class Boss1 : MonoBehaviour
     private int lives;
     private int maxLives = 100;
     private int damage = 20;
+    private int experienceToGive = 20;
 
     void Awake(){
         animator = GetComponent<Animator>();
@@ -109,6 +110,7 @@ public class Boss1 : MonoBehaviour
             AudioManager.Instance.PlayModifiedSound(AudioManager.Instance.boom2);
 
             gameObject.SetActive(false);
+            PlayerController.Instance.GetExperience(experienceToGive);
         }
     }
 }

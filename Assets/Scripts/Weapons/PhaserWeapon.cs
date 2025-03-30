@@ -29,6 +29,11 @@ public class PhaserWeapon : Weapon
             bullet.transform.localScale = new Vector2(stats[weaponLevel].size, stats[weaponLevel].size);
             bullet.SetActive(true);
         }
+    }
 
+    public void LevelUp(){
+        if (weaponLevel < stats.Count - 1){
+            weaponLevel++;
+        }
     }
 }

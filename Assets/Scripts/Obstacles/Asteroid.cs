@@ -11,6 +11,7 @@ public class Asteroid : MonoBehaviour
     private int lives;
     private int maxLives;
     private int damage;
+    private int experienceToGive = 1;
 
     [SerializeField] private Sprite[] sprites;
 
@@ -61,6 +62,7 @@ public class Asteroid : MonoBehaviour
             AudioManager.Instance.PlayModifiedSound(AudioManager.Instance.boom2);
             flashWhite.Reset();
             gameObject.SetActive(false);
+            PlayerController.Instance.GetExperience(experienceToGive);
         }
     }
 }
