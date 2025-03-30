@@ -634,6 +634,11 @@ MonoBehaviour:
   maxPos: {fileID: 1695597536}
   waveNumber: 0
   waves:
+  - pool: {fileID: 570859167}
+    spawnTimer: 0
+    spawnInterval: 0.5
+    objectsPerWave: 10
+    spawnedObjectCount: 0
   - pool: {fileID: 1517260697}
     spawnTimer: 0
     spawnInterval: 0.5
@@ -9007,9 +9012,29 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 401a76ec4e8abc74a83588a3b6c61e08, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  weaponLevel: 0
+  stats:
+  - speed: 5
+    damage: 1
+    size: 1
+    amount: 1
+    range: 1
+  - speed: 8
+    damage: 2
+    size: 1.4
+    amount: 2
+    range: 1
+  - speed: 11
+    damage: 3
+    size: 1.8
+    amount: 3
+    range: 1
+  - speed: 14
+    damage: 4
+    size: 2.2
+    amount: 4
+    range: 1
   bulletPool: {fileID: 1371389639}
-  speed: 12
-  damage: 1
 --- !u!224 &1641510500 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 7163429371071085419, guid: debaed1f58d5a4040854cedde3939bfc, type: 3}
