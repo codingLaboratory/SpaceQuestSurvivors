@@ -77,9 +77,9 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 2006439231
-  m_SortingLayer: 2
-  m_SortingOrder: 3
+  m_SortingLayerID: 695291255
+  m_SortingLayer: 3
+  m_SortingOrder: 2
   m_Sprite: {fileID: -336697590, guid: 8f97c74e8599adb4db05c89d3ff9ea2e, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -108,8 +108,6 @@ MonoBehaviour:
   - {fileID: 898648767, guid: 8f97c74e8599adb4db05c89d3ff9ea2e, type: 3}
   - {fileID: -420672454, guid: 8f97c74e8599adb4db05c89d3ff9ea2e, type: 3}
   - {fileID: -1317108632, guid: 8f97c74e8599adb4db05c89d3ff9ea2e, type: 3}
-  zappedEffect: {fileID: 515753523740422215, guid: abcb426a598f5ee47b5ef0f14239e999, type: 3}
-  burnEffect: {fileID: 4741064581296162011, guid: 0fa269e3e62c097418d44a1837751a7b, type: 3}
 --- !u!58 &5033106193193391151
 CircleCollider2D:
   m_ObjectHideFlags: 0

@@ -1,10 +1,19 @@
 fileFormatVersion: 2
-guid: c1d51fe4ec32c2d4cbbc74ba7599587a
+guid: 5bee0d98a18956b4f99dcf5fde345243
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 2009410003007727163
-    second: bullet1_0
+      213: 5588965506718041536
+    second: beetlemorph_0
+  - first:
+      213: 8176062168316702862
+    second: beetlemorph_1
+  - first:
+      213: -3962547319695902046
+    second: beetlemorph_2
+  - first:
+      213: 1408924143864969165
+    second: beetlemorph_3
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -46,7 +55,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -96,27 +105,106 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: bullet1_0
+      name: beetlemorph_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 26
-        height: 10
+        width: 120
+        height: 120
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: b36646d50cbd2eb10800000000000000
-      internalID: 2009410003007727163
+      spriteID: 3773bff71d2e739479782c066b801399
+      internalID: 251601843
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: beetlemorph_1
+      rect:
+        serializedVersion: 2
+        x: 120
+        y: 0
+        width: 120
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 29e1218b08e626d4cbc7a14fa0bccc69
+      internalID: 631983820
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: beetlemorph_2
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 0
+        width: 120
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7ea54c58568823b4883a3ca1dd25383c
+      internalID: -274816981
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: beetlemorph_3
+      rect:
+        serializedVersion: 2
+        x: 360
+        y: 0
+        width: 120
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 05ba58f9813143b48aee5f60cd8b722a
+      internalID: -1460497636
       vertices: []
       indices: 
       edges: []
@@ -125,7 +213,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 5e97eb03825dee720800000000000000
+    spriteID: 5db92f5af3773a248ae4e42ceeab69bb
     internalID: 0
     vertices: []
     indices: 
@@ -135,7 +223,10 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      bullet1_0: 2009410003007727163
+      beetlemorph_0: 251601843
+      beetlemorph_1: 631983820
+      beetlemorph_2: -274816981
+      beetlemorph_3: -1460497636
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
