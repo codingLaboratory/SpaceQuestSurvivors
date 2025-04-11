@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 6191747974481308551}
   - component: {fileID: 2928755077192229656}
   - component: {fileID: -7390071035176042686}
+  - component: {fileID: -3199334058569827054}
   m_Layer: 12
   m_Name: Beetlemorph
   m_TagString: Enemy
@@ -30,7 +31,7 @@ Transform:
   m_GameObject: {fileID: 7010309627298225203}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0.7071068, w: 0.7071068}
-  m_LocalPosition: {x: 2.01485, y: 0.14951178, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -170,5 +171,17 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 2f9acc78f09acf146afad5906b762c85, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &-3199334058569827054
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7010309627298225203}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b29b180b662dd734baafee6b7fe08c3e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
