@@ -6,8 +6,8 @@ public class Enemy : MonoBehaviour
     private FlashWhite flashWhite;
     protected ObjectPooler destroyEffectPool;
 
-    [SerializeField] private int lives;
-    [SerializeField] private int maxLives;
+    [SerializeField] protected int lives;
+    [SerializeField] protected int maxLives;
     [SerializeField] private int damage;
     [SerializeField] private int experienceToGive;
 
@@ -17,13 +17,16 @@ public class Enemy : MonoBehaviour
     protected float speedX = 0;
     protected float speedY = 0;
 
+    private void Awake(){
+        spriteRenderer = GetComponent<SpriteRenderer>();
+    }
+
     public virtual void OnEnable(){
         lives = maxLives;
     }
 
     public virtual void Start()
     {
-        spriteRenderer = GetComponent<SpriteRenderer>();
         flashWhite = GetComponent<FlashWhite>();
     }
 
@@ -39,7 +42,7 @@ public class Enemy : MonoBehaviour
         }
     }
 
-    public void TakeDamage(int damage){
+    public virtual void TakeDamage(int damage){
         lives -= damage;
         AudioManager.Instance.PlayModifiedSound(hitSound);
 
