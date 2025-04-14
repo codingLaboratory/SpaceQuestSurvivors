@@ -763,15 +763,20 @@ MonoBehaviour:
   maxPos: {fileID: 1695597536}
   waveNumber: 0
   waves:
+  - pool: {fileID: 1360161635}
+    spawnTimer: 0
+    spawnInterval: 1
+    objectsPerWave: 1
+    spawnedObjectCount: 0
+  - pool: {fileID: 570859167}
+    spawnTimer: 0
+    spawnInterval: 0.3
+    objectsPerWave: 70
+    spawnedObjectCount: 0
   - pool: {fileID: 1745908973}
     spawnTimer: 0
     spawnInterval: 0.8
     objectsPerWave: 10
-    spawnedObjectCount: 0
-  - pool: {fileID: 570859167}
-    spawnTimer: 0
-    spawnInterval: 0.5
-    objectsPerWave: 70
     spawnedObjectCount: 0
   - pool: {fileID: 785832685}
     spawnTimer: 0
@@ -9383,6 +9388,52 @@ Transform:
   m_Children: []
   m_Father: {fileID: 782940388}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1360161633
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1360161634}
+  - component: {fileID: 1360161635}
+  m_Layer: 0
+  m_Name: Boss2Pool
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1360161634
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1360161633}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1430303185}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1360161635
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1360161633}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c7fc8e10a0515334fb7f42a4b0091a7b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  prefab: {fileID: 7958326619362171961, guid: b6dc58a0efadf414f94c56cef24e3478, type: 3}
+  poolSize: 1
 --- !u!1 &1371389637
 GameObject:
   m_ObjectHideFlags: 0
@@ -9671,6 +9722,7 @@ Transform:
   - {fileID: 809684989}
   - {fileID: 1737394318}
   - {fileID: 1885467041}
+  - {fileID: 1360161634}
   - {fileID: 785832684}
   - {fileID: 1894310531}
   - {fileID: 1745908972}

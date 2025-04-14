@@ -28,6 +28,7 @@ public class Locustmorph : Enemy
     }
 
     private void EnterIdle(){
+        charging = false;
         spriteRenderer.sprite = frames[enemyVariant].sprites[0];
         speedX = Random.Range(0.1f, 0.6f);
         speedY = Random.Range(-0.9f, 0.9f);
@@ -35,6 +36,7 @@ public class Locustmorph : Enemy
 
     private void EnterCharge(){
         if (!charging){
+            charging = true;
             spriteRenderer.sprite = frames[enemyVariant].sprites[1];
             AudioManager.Instance.PlaySound(AudioManager.Instance.locustCharge);
             speedX = Random.Range(-4f, -6f);

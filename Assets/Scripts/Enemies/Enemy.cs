@@ -8,8 +8,8 @@ public class Enemy : MonoBehaviour
 
     [SerializeField] protected int lives;
     [SerializeField] protected int maxLives;
-    [SerializeField] private int damage;
-    [SerializeField] private int experienceToGive;
+    [SerializeField] protected int damage;
+    [SerializeField] protected int experienceToGive;
 
     protected AudioSource hitSound;
     protected AudioSource destroySound;
@@ -17,7 +17,7 @@ public class Enemy : MonoBehaviour
     protected float speedX = 0;
     protected float speedY = 0;
 
-    private void Awake(){
+    public virtual void Awake(){
         spriteRenderer = GetComponent<SpriteRenderer>();
     }
 
@@ -35,7 +35,7 @@ public class Enemy : MonoBehaviour
         transform.position += new Vector3(speedX * Time.deltaTime, speedY * Time.deltaTime);
     }
 
-    private void OnCollisionEnter2D(Collision2D collision){
+    public virtual void OnCollisionEnter2D(Collision2D collision){
         if (collision.gameObject.CompareTag("Player")){
             PlayerController player = collision.gameObject.GetComponent<PlayerController>();
             if (player) player.TakeDamage(damage);
