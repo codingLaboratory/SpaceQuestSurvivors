@@ -13,10 +13,11 @@ public class Squidmorph : Enemy
     public override void OnEnable(){
         base.OnEnable();
         transform.rotation = Quaternion.Euler(0, 0, 90);
-        speedX = -15f;
+        speedX = -7f;
         targetSpeedX = Random.Range(-0.1f, -0.6f);
         speedY = Random.Range(-0.3f, 0.3f);
         shootInterval = Random.Range(1f, 6f);
+        shootTimer = 1f;
     }
 
     public override void Start()
